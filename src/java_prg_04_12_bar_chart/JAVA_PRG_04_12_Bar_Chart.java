@@ -51,6 +51,8 @@ public class JAVA_PRG_04_12_Bar_Chart {
         // Create keyboard for user input
         Scanner scrKeyboard = new Scanner(System.in);
         
+        // Loop through once for each store and get sales
+        // Validate data too
         do {
             System.out.print("Please enter today's sales for store 1:");
             intStore1 = scrKeyboard.nextInt();
@@ -72,6 +74,8 @@ public class JAVA_PRG_04_12_Bar_Chart {
             intStore5 = scrKeyboard.nextInt();
         } while (intStore5 < 0 || intStore5 > 100000);
         
+        
+        // Loop through once for each store and calculate asterisks to display
         System.out.print("Store 1: ");
         for(int i = 0 ; i < (intStore1 / 100) ; i++)
         {
